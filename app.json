@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Macleods",
+    "slug": "Macleods",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/mImage.png",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.macleod.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/mImage.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.macleod.app",
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
