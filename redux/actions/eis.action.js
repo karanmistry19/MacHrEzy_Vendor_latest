@@ -9,6 +9,17 @@ export const fetchEISPersonal = () => (dispatch) => {
     },
   });
 };
+export const fetchEmployeeDetailsQr = (requestedEmpCode) => (dispatch) => {
+  return dispatch({
+    type: "EMPLOYEE_DETAILS_QR",
+    payload: {
+      request: {
+        url: `api/eis/employeeDetails?empCode=${requestedEmpCode}`,
+        method: "GET",
+      },
+    },
+  });
+};
 
 export const fetchEISOfficial = () => (dispatch) => {
   return dispatch({
