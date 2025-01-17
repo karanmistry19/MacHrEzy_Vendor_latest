@@ -63,15 +63,15 @@ const CheckInOutcard = ({
       const date = new Date().toJSON().slice(0, 10);
       const eventDate =
         date.slice(8, 10) + "/" + date.slice(5, 7) + "/" + date.slice(0, 4);
-      console.log(eventDate, "eventDate");
+      //console.log(eventDate, "eventDate");
       let checkIn = attendanceTxnUser.filter(
         (item) => item.remarks === "CHECK-IN" && item.eventDate === eventDate
       );
       let checkOut = attendanceTxnUser.filter(
         (item) => item.remarks === "CHECK-OUT" && item.eventDate === eventDate
       );
-      console.log(checkIn, "checkIn");
-      console.log(checkOut, "checkOut");
+      //console.log(checkIn, "checkIn");
+      //console.log(checkOut, "checkOut");
       if (checkIn.length > 0) {
         let temp = new Date(checkIn[0].fromDate);
         // console.log(check)
