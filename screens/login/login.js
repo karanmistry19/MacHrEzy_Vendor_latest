@@ -35,6 +35,7 @@ const Login = ({ login }) => {
             flexDirection: "row",
             // borderWidth: 2,
             // borderColor: "black",
+            //
           }}
         >
           <View style={styles.container1}>
